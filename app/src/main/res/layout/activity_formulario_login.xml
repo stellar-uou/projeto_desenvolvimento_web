@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:ignore="ExtraText">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:importantForAccessibility="no"
+        android:src="@drawable/bitcoin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        style="@style/ContainerTitulo"
+        android:text="@string/CurrencyHub"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/login"
+        style="@style/ContainerLogin"
+        android:gravity="center"
+        android:text="@string/Login"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_title"
+        android:importantForAccessibility="no"
+        />
+
+
+    <View
+        android:id="@+id/loginComponents"
+        style="@style/ContainerComponents"
+        android:layout_height="380dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+
+    <EditText
+        android:id="@+id/containerNome"
+        android:hint="@string/cpf"
+        style="@style/Container_nome"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/loginComponents"
+        app:layout_constraintEnd_toEndOf="@+id/loginComponents"
+        app:layout_constraintTop_toTopOf="@+id/loginComponents"
+        android:importantForAccessibility="no"
+        android:importantForAutofill="no" />
+
+
+    <EditText
+        android:id="@+id/containerSenha"
+        style="@style/Container_senha"
+        android:layout_marginTop="90dp"
+        android:hint="@string/senha"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/loginComponents"
+        app:layout_constraintStart_toStartOf="@+id/loginComponents"
+        app:layout_constraintTop_toTopOf="@+id/containerNome"
+        android:importantForAutofill="no" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        style="@style/Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerSenha"
+        android:text="@string/entrar"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_esqueci"
+        style="@style/Button_menor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        android:text="@string/esq_senha"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_cadastrar"
+        style="@style/Button_cadastrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_esqueci"
+        android:text="@string/cadastrar"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

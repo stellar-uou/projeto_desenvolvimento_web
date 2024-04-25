@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ContainerTitulo">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">120dp</item>
+
+    </style>
+    <style name="ContainerLogin">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="ContainerCadastro">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="ContainerComponents">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+    </style>
+
+    <style name="Container_nome">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/container_nome</item>
+        <item name="android:maxLength">11</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="Container_nome2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/container_nome</item>
+        <item name="android:maxLength">30</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_marginLeft">35dp</item>
+        <item name="android:layout_marginRight">35dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+
+    <style name="Container_email">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/container_nome</item>
+        <item name="android:maxLength">30</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_marginLeft">35dp</item>
+        <item name="android:layout_marginRight">35dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+
+    <style name="Container_cpf">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/container_nome</item>
+        <item name="android:maxLength">11</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_marginLeft">35dp</item>
+        <item name="android:layout_marginRight">35dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+
+    <style name="Container_senha">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/container_senha</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:textAllCaps">false</item>
+
+
+    </style>
+
+    <style name="Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:padding">15dp</item>
+    </style>
+
+    <style name="Button_menor">
+        <item name="android:background">@drawable/button_menor</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_marginLeft">80dp</item>
+        <item name="android:layout_marginRight">80dp</item>
+        <item name="android:layout_marginTop">60dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textAllCaps">false</item>
+
+    </style>
+
+    <style name="Button_cadastrar">
+        <item name="android:background">@drawable/button_cadastrar</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_marginLeft">80dp</item>
+        <item name="android:layout_marginRight">80dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textAllCaps">false</item>
+
+    </style>
+    <style name="Container_senha2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/container_nome</item>
+        <item name="android:maxLength">30</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_marginLeft">35dp</item>
+        <item name="android:layout_marginRight">35dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="ButtonCadastrar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">35dp</item>
+        <item name="android:layout_marginRight">35dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:padding">15dp</item>
+    </style>
+
+    <style name="Container_header_nav">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/background</item>
+    </style>
+
+    <style name="ContainerTitulo_nav">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">90dp</item>
+    </style>
+    <style name="ContainerTitulo_pg1">
+
+    </style>
+    <style name="container_moedas">
+        <item name="android:layout_width">340dp</item>
+        <item name="android:layout_height">240dp</item>
+        <item name="android:background">@drawable/container_moedas</item>
+
+    </style>
+
+</resources>

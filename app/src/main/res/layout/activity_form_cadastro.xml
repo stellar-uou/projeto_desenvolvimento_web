@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".FormCadastro">
+
+
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="28dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/bitcoin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        style="@style/ContainerTitulo"
+        android:text="@string/CurrencyHub"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/cadastro"
+        style="@style/ContainerCadastro"
+        android:gravity="center"
+        android:text="@string/cadastro"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_title"
+        />
+    <View
+        android:id="@+id/cadastroComponents"
+        style="@style/ContainerComponents"
+        android:layout_height="420dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cadastro" />
+
+
+
+
+    <EditText
+        android:id="@+id/containerNome"
+        style="@style/Container_nome2"
+        android:hint="@string/nome"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cadastroComponents"
+        android:autofillHints="" />
+    <EditText
+        android:id="@+id/containerEmail"
+        style="@style/Container_email"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerNome"
+        android:importantForAutofill="no" />
+    <EditText
+        android:id="@+id/containerCpf"
+        style="@style/Container_cpf"
+        android:hint="@string/cpf"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerEmail"
+        android:importantForAutofill="no" />
+
+
+    <EditText
+        android:id="@+id/containerSenha"
+        style="@style/Container_senha2"
+        android:hint="@string/senha"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerCpf"
+        android:importantForAutofill="no" />
+    <EditText
+        android:id="@+id/containerConfSenha"
+        style="@style/Container_senha2"
+        android:hint="@string/confSenha"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerSenha"
+        android:importantForAutofill="no" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonCadastrar"
+        style="@style/ButtonCadastrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerConfSenha"
+        android:text="@string/cadastrar2"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
